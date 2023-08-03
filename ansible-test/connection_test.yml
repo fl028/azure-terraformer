@@ -1,0 +1,8 @@
+---
+- name: Test SSH Connection
+  hosts: web-servers
+  gather_facts: false
+
+  tasks:
+    - name: Test connection
+      ping:
